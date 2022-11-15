@@ -1,0 +1,157 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+table{
+    display: none;
+}
+html, body{
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header{
+    width: 100vw;
+    height: 30vh;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #7D7DFF, #318C18);
+    color:beige;
+}
+main{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    width: 50%;
+    margin-top: 1rem;
+}
+.test-header>input{
+    width: 100%;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    padding: 0.25em;
+    border: none;
+    border-bottom: 0.1em solid #7D7DFF;
+}
+.test-header>input:focus{
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 0.1em solid #318C18;
+    border-left: 0.1em solid #318C18;
+    position: relative;
+    transition: border-left 0.15s ease-in, border-bottom 0.15s ease-in;
+}
+.test-header>input:focus::placeholder{
+    color: black;
+    transition: color 0.15s ease-in;
+}
+.test-header, .test-footer{
+    width: 100%;
+    margin-top: 0.5rem;
+}
+.test-footer{
+    display: flex;
+    align-items: center;
+}
+.test-footer>div{
+    margin-left: 3rem;
+}
+h2{
+    font-weight: 100;
+    color: #318C18;
+}
+h3{
+    font-weight: 100;
+}
+p, li{
+    margin-top: 0.75rem;
+}
+ul{
+    margin-left: 1.5rem;
+}
+.blue{
+    background-color: rgb(0, 217, 255);
+}
+button{
+    padding: 0.25em;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #7D7DFF;
+    opacity: 100%;
+    border: 0.1em solid black;
+    border-radius: 0.5em;
+}
+button:hover{
+    opacity: 100%;
+    border: 0.15em solid black;
+    transition: opacity 0.15s ease-in, border 0.15s ease-in;
+}
+/*media*/
+
+@media (max-width: 1200px) and (min-width: 1024px){
+    header{
+        height: 25vh;
+    }
+    .container{
+        width: 95%;
+    }
+}
+@media (max-width: 1023px) and (min-width: 768px){
+    html, body{
+        font-size: 14px;
+    }
+    header{
+        height: 20vh;
+    }
+    .container{
+        width: 97.5%;
+    }
+    .test-header>input{
+        font-size: 14px;
+    }
+    button{
+        font-size: 12px;
+    }
+}
+@media (max-width: 767px) and (min-width: 480px){
+    html, body{
+        font-size: 12px;
+    }
+    header{
+        height: 15vh;
+    }
+    .container{
+        width: 97.5%;
+    }
+    .test-header>input{
+        font-size: 12px;
+    }
+    button{
+        font-size: 10px;
+    }
+}
+@media (max-width: 479px){
+    html, body{
+        font-size: 10px;
+    }
+    header{
+        height: 10vh;
+    }
+    .container{
+        width: 98%;
+    }
+    .test-header>input{
+        font-size: 10px;
+    }
+    button{
+        font-size: 8px;
+    }
+}
