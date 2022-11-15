@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Экспресс-оценка физического здоровья по Геннадию Леонидовичу Апанасенко</title>
+</head>
+<body>
+    <header>
+            <h1>Экспресс-оценка физического здоровья</h1>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Геннадий Леонидович Апанасенко</h2>
+            <p>Профессор, доктор медицинских наук, заведующий кафедрой спортивной медицины и санологии Национальной медицинской академии последипломного образования им. Шупика (1991-2013).</p>
+            <p>Член Национального Совета по вопросам здравоохранения при Президенте Украины (2007-2009). Основатель украинской школы санологии (науки о здоровье).</p>
+            <p>Автор более 400 публикаций.</p>
+        </div>
+        <div class="container">
+            <h2>В чём заключается экспресс-оценка?</h2>
+            <p>Для вычисления и получения индексов определяют ряд известных и широко применяемых в практике показателей:</p>
+            <ul>
+                <li>Масса тела(г)</li>
+                <li>Рост(см)</li>
+                <li>Жизненная ёмкость лёгких(мл)</li>
+                <li>Частота сердечных колебаний(за 1 минуту)</li>
+                <li>Артериальное давление систолическое ("верхнее")</li>
+                <li>Время восстановления после 20 преседаний за 30 секунд(сек)</li>
+                <li>Динанометрия кисти</li>
+            </ul>
+        </div>
+        <div class="container">
+            <h2>Тестирование</h2>
+        </div>
+        <div class="container">
+            <div class="test-header">
+                <input type="text" id="weight" autocomplete="off" placeholder="Масса тела(г)">
+            </div>
+        </div>
+        <div class="container">
+            <div class="test-header">
+                <input type="text" id="height" autocomplete="off" placeholder="Рост(см)">
+            </div>
+        </div>
+        <div class="container">
+            <div class="test-header">
+                <input type="text" id="capacity" autocomplete="off" placeholder="Жизненная ёмкость лёгких(мл)">
+            </div>
+        </div>
+        <div class="container">
+            <div class="test-header">
+                <input type="text" id="frequency" autocomplete="off" placeholder="Частота сердечных сокращений(за 1 минуту)">
+            </div>
+        </div>
+        <div class="container">
+            <div class="test-header">
+                <input type="text" id="pressure" autocomplete="off" placeholder="Систолическое давление">
+            </div>
+        </div>
+        <div class="container">
+            <div class="test-header">
+                <input type="text" id="time" autocomplete="off" placeholder="Время восстановления(сек)">
+            </div>
+        </div>
+        <div class="container">
+            <div class="test-header">
+                <input type="text" id="dinanometria" autocomplete="off" placeholder="Динанометрия кисти">
+            </div>
+        </div>
+        <div class="container">
+            <div class="test-footer">
+                <h3>Укажите ваш пол:</h3>
+                <div>
+                    <p>М</p>
+                    <input type="radio" name="gender" id="male" checked>
+                </div>
+                <div>
+                    <p>Ж</p>
+                    <input type="radio" name="gender" id="female">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <button>Ознакомиться с результатом</button>
+        </div>
+        <div class="container">
+            <table border="1" cellspacing = "0" cellpadding = "10">
+                <thead>
+                    <tr>
+                        <th rowspan="2">N</th>
+                        <th rowspan="2">Показатели</th>
+                        <th colspan="5">Функциональные уровни</th>
+                    </tr>
+                    <tr>
+                        <th>I<br>Низкий</th>
+                        <th>II<br>Ниже среднего</th>
+                        <th>III<br>Средний</th>
+                        <th>IV<br>Выше среднего</th>
+                        <th>V<br>Высокий</th>
+                    </tr>
+                </thead>
+                <caption>
+                    <tr id="tr1">
+                        <td>1.</td>
+                        <td>Масса тела/Рост(г/см)<br>М<br>Ж<br>Баллы</td>
+                        <td>501<br>451-500<br><b>-2</b></td>
+                        <td>451-500<br>401-450<br><b>-1</b></td>
+                        <td>401-450<br>375-400<br><b>0</b></td>
+                        <td>375-400<br>351-400<br><b>-</b></td>
+                        <td>375<br>350<br><b>-</b></td>
+                    </tr>
+                    <tr id="tr2">
+                        <td>2.</td>
+                        <td>ЖЕЛ/Масса тела(мл/кг)<br>М<br>Ж<br>Баллы</td>
+                        <td>50<br>40<br><b>0</b></td>
+                        <td>51-55<br>41-45<br><b>1</b></td>
+                        <td>56-60<br>46-50<br><b>2</b></td>
+                        <td>61-65<br>51-57<br><b>4</b></td>
+                        <td>66<br>57<br><b>5</b></td>
+                    </tr>
+                    <tr id="tr3">
+                        <td>3.</td>
+                        <td>(ЧСС * СД)/100<br>М<br>Ж<br>Баллы</td>
+                        <td>111<br>111<br><b>-2</b></td>
+                        <td>95-110<br>95-110<br><b>0</b></td>
+                        <td>85-94<br>85-94<br><b>2</b></td>
+                        <td>70-84<br>70-84<br><b>3</b></td>
+                        <td>69<br>69<br><b>4</b></td>
+                    </tr>
+                    <tr id="tr4">
+                        <td>4.</td>
+                        <td>Время восстановления ЧСС после 20 приседаний за 30 сек.<br>М<br>Ж<br>Баллы</td>
+                        <td>3 мин.<br>3 мин.<br><b>-2</b></td>
+                        <td>2-3 мин.<br>2-3 мин.<br><b>1</b></td>
+                        <td>1 мин. 30 сек. - 1 мин. 59 сек.<br>1 мин. 30 сек. - 1 мин. 59 сек.<br><b>3</b></td>
+                        <td>1 мин. - 1 мин. 29 сек.<br>1 мин. - 1 мин. 29 сек.<br><b>5</b></td>
+                        <td>59 сек.<br>59 сек.<br><b>7</b></td>
+                    </tr>
+                    <tr id="tr5">
+                        <td>5.</td>
+                        <td>Динамометрия кисти<br>М<br>Ж<br>Баллы</td>
+                        <td>60<br>40<br><b>0</b></td>
+                        <td>61-65<br>41-50<br><b>1</b></td>
+                        <td>66-70<br>51-55<br><b>2</b></td>
+                        <td>71-80<br>56-60<br><b>3</b></td>
+                        <td>81<br>61<br><b>4</b></td>
+                    </tr>
+                </caption>
+                <tfoot>
+                    <tr id="tr6">
+                        <td></td>
+                        <td><b>Общая оценка</b>(сумма баллов)</td>
+                        <td><b>4</b></td>
+                        <td><b>5-9</b></td>
+                        <td><b>10-13</b></td>
+                        <td><b>14-16</b></td>
+                        <td><b>17-21</b></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </main>
+    <script src="scripts/index.js"></script>
+</body>
+</html>
