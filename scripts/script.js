@@ -239,7 +239,6 @@ user.btn.addEventListener('click', () =>  {
     user.point += calcFrequency(user.frequency.value, user.pressure.value);
     user.point += calcTime(user.time.value);
     user.point += calcDinanometria(user.dinanometria.value, user.male.checked);
-    alert(user.point);
     output(user.point);
     user.point = 0;
     table.style.display = 'block';
